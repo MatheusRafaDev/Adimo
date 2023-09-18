@@ -1,5 +1,5 @@
-1.	Tela de Login						italo
-2.	Tela de Pesquisa de Imóveis			guilherme 
-3.	Tela de Cadastro de Cliente			matheus
+1.	Tela de Login					        	    italo
+2.	Tela de Pesquisa de Imóveis		    	guilherme 
+3.	Tela de Cadastro de Cliente		    	matheus
 4.	Tela de Cadastro de Ficha Cadastra	igor
-5.	Tela de Reserva de Imóvel			thiago 
+5.	Tela de Reserva de Imóvel			      thiago 
