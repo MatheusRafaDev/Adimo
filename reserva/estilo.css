@@ -1,0 +1,32 @@
+body {
+    background-color: #3a356e;
+}
+
+.inicio {
+    border: solid;
+}
+
+.texto {
+    float: right;
+}
+
+.imagem {
+    width: 300px;
+    height: 300px;
+
+}
+
+.informacao {
+    margin-top: 50px;
+    border: solid;
+}
+
+.preco {
+    margin-top: 50px;
+    border: solid;
+}
+
+.subtotal {
+    margin-top: 50px;
+    border: solid;
+}
