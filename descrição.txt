@@ -3,3 +3,17 @@
 3.	Tela de Cadastro de Cliente		    	matheus
 4.	Tela de Cadastro de Ficha Cadastra	igor
 5.	Tela de Reserva de Imóvel			      thiago 
+
+
+cores
+
+#766dab;
+#58518c;
+#9389ca;
+#3a356e;
+
+Adm
+
+clientes
+reservas por clientes
+reservas diponiveis

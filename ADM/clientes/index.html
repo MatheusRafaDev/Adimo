@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <title>Clientes</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Clientes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="/detalhes_cliente/1">João Silva</a></td>
+                    <td>joao@email.com</td>
+                    <td>
+                        <button onclick="window.location.href='/editar_cliente/1'">Editar</button>
+                        <button onclick="window.location.href='/excluir_cliente/1'">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="/detalhes_cliente/1">Matheus</a></td>
+                    <td>matheus@email.com</td>
+                    <td>
+                        <button onclick="window.location.href='/editar_cliente/1'">Editar</button>
+                        <button onclick="window.location.href='/excluir_cliente/1'">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="window.location.href='/cadastro_cliente'">Novo Cliente</button>
+    </div>
+</body>
+
+</html>
