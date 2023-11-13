@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Dashboard Administrativo</title>
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>Dashboard Administrativo</h1>
+      <button id="logoutButton" class="logout-button">Sair</button>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Dashboard Administrativo</a></li>
+        <li><a href="#">Listagem de Imóveis</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="charts-container">
+        <div class="chart">
+          <h2>Vendas por Mês</h2>
+          <canvas id="salesChart"></canvas>
+        </div>
+        <div class="chart">
+          <h2>Renda Bruta</h2>
+          <canvas id="incomeChart"></canvas>
+        </div>
+        <div class="chart">
+          <h2>Tipo de Imóvel</h2>
+          <canvas id="propertyTypeChart"></canvas>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="modal" id="logoutModal">
+    <div class="modal-content">
+      <p>Deseja realmente sair?</p>
+      <button id="confirmLogoutButton">Sim</button>
+      <button id="cancelLogoutButton">Cancelar</button>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
