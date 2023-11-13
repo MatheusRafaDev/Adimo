@@ -7,19 +7,76 @@
     <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
     <title>Clientes</title>
     <style>
+        /* Adicionando estilo para melhorar a interatividade */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
 
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #555;
+            color: #fff;
+        }
+
+        tbody tr:hover {
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+
+        .action-buttons button {
+            background-color: #555;
+            color: #fff;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .action-buttons button:hover {
+            background-color: #333;
+        }
+
+        .status-ativo {
+            color: green;
+        }
+
+        .status-inativo {
+            color: red;
+        }
     </style>
 </head>
 
 <body>
+
+    <div class="menu">
+        <ul>
+            <li><a href="/ADM/clientes/index.html">Visão geral</a></li>
+            <li><a href="/ADM/clientes/index.html">Clientes</a></li>
+            <li><a href="/ADM/imoveis alugados/index.html">Imóveis Alugados</a></li>
+            <li><a href="">Imóveis Disponíveis</a></li>
+            <li class="right"><a href="">Usuário</a></li>
+            <li class="right"><a href="">Sair</a></li>
+        </ul>
+    </div>
+
     <div class="container">
         <h1>Clientes</h1>
+        <div class="action-buttons">
+        </div>
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Email</th>
+                    <th>Status</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -28,23 +85,24 @@
                     <td>1</td>
                     <td><a href="/detalhes_cliente/1">João Silva</a></td>
                     <td>joao@email.com</td>
+                    <td class="status-ativo">Ativo</td>
                     <td>
-                        <button onclick="window.location.href='/editar_cliente/1'">Editar</button>
-                        <button onclick="window.location.href='/excluir_cliente/1'">Excluir</button>
+                        <button onclick="editarCliente(1)">Editar</button>
+                        <button onclick="excluirCliente(1)">Excluir</button>
                     </td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td><a href="/detalhes_cliente/1">Matheus</a></td>
+                    <td><a href="/detalhes_cliente/2">Matheus</a></td>
                     <td>matheus@email.com</td>
+                    <td class="status-inativo">Inativo</td>
                     <td>
-                        <button onclick="window.location.href='/editar_cliente/1'">Editar</button>
-                        <button onclick="window.location.href='/excluir_cliente/1'">Excluir</button>
+                        <button onclick="editarCliente(2)">Editar</button>
+                        <button onclick="excluirCliente(2)">Excluir</button>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <button onclick="window.location.href='/cadastro_cliente'">Novo Cliente</button>
     </div>
 </body>
 
