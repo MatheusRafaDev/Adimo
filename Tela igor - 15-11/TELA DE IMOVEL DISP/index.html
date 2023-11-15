@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    
+    <title>Cadastro do imóvel</title>
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+
+</head>
+<body>
+
+  <div class="center">
+    <div class="recipiente">
+      <h1>Cadastrar Imóvel</h1>
+
+      <table>
+        <tbody id="propiedadelist">
+        </tbody>
+      </table>
+
+      <form id="property-form">
+        <h2>Adicionar Novo Imóvel</h2>
+        <label for="end">Endereço:</label>
+        <input type="text" id="end" name="end" required>
+        
+
+        <label for="tipo">Tipo:</label>
+        <select id="garagem" name="garagem" required>
+            <option value="Sim">Casa</option>
+            <option value="Não">Apartamento</option>
+          </select>
+
+        <label for="quartos">Número de Quartos:</label>
+        <input type="number" id="quartos" name="quartos" required>
+        
+
+        <label for="garagem">Garagem:</label>
+        <select id="garagem" name="garagem" required>
+          <option value="1 Vaga">1 Vaga</option>
+          <option value="2 Vagas">2 Vagas</option>
+          <option value="3 Vagas">3 Vagas</option>
+          <option value="Não possui Garagem">Não Possui garagem</option> 
+        </select>
+        
+
+
+        <button type="botao" onclick="addProperty()">Adicionar Imóvel</button>
+        <h3>Imóveis Disponíveis para Aluguel</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Endereço</th>
+                    <th>Tipo de Imóvel</th>
+                    <th>Número de Quartos</th>
+                    <th>Garagem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                
+                </tr>
+        
+            </tbody>
+        </table>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
