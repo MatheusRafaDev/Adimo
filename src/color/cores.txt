@@ -1,0 +1,9 @@
+ff0101 - VERMELHO
+
+
+cores
+
+#766dab;
+#58518c;
+#9389ca;
+#3a356e;

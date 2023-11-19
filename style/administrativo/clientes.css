@@ -6,6 +6,15 @@ body {
     color: #333;
 }
 
+header {
+    background-color: #3a356e;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5px;
+}
+
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -17,8 +26,6 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #555;
 }
 
 table {
@@ -34,7 +41,7 @@ th, td {
 }
 
 th {
-    background-color: #555;
+    background-color: #58518c;
     color: #fff;
 }
 
@@ -43,11 +50,8 @@ tbody tr:hover {
     cursor: pointer;
 }
 
-.action-buttons {
-    text-align: center;
-}
 
- button {
+button {
     background-color: #555;
     color: #fff;
     padding: 12px;
@@ -61,9 +65,8 @@ tbody tr:hover {
     background-color: #333;
 }
 
-
 .menu {
-    background-color: #333;
+    background-color: #58518c;
     overflow: hidden;
 }
 
@@ -92,4 +95,9 @@ tbody tr:hover {
 
 .menu .right {
     float: right;
+}
+
+.menu a.active {
+    background-color: #ddd;
+    color: black;
 }

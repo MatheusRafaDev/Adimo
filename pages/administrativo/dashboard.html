@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/style/administrativo/dashboard.css">
+  <link rel="icon" href="/src/img/favicon.ico" type="image/x-icon">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/script/administrativo/dashboard.js"></script>
   <title>Dashboard Administrativo</title>
 </head>
+
 <body>
+
   <div class="dashboard-container">
     <header>
+      <div class="menu">
+        <ul>
+          <li><a href="/pages/administrativo/dashboard.html">Dashboard</a></li>
+          <li><a href="/pages/administrativo/clientes.html">Clientes</a></li>
+          <li><a href="/pages/administrativo/imoveis-alugados.html">Imóveis Alugados</a></li>
+          <li><a href="/pages/administrativo/imoveis-disponiveis.html">Imóveis Disponíveis</a></li>
+          <li class="right"><a href="">Usuário</a></li>
+          <li class="right"><a href="">Sair</a></li>
+        </ul>
+      </div>
+
       <h1>Dashboard Administrativo</h1>
-      <button id="logoutButton" class="logout-button">Sair</button>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#" class="active">Dashboard Administrativo</a></li>
-        <li><a href="#">Listagem de Imóveis</a></li>
-      </ul>
-    </nav>
+    
     <main>
       <div class="charts-container">
         <div class="chart">
@@ -43,6 +53,6 @@
       <button id="cancelLogoutButton">Cancelar</button>
     </div>
   </div>
-  <script src="scripts.js"></script>
 </body>
+
 </html>
