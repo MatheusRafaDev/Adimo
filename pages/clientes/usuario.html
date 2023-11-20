@@ -3,21 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/style/clientes/usuario.css">
+  <link rel="icon" href="/src/img/favicon.ico" type="image/x-icon">
   <title>User Dashboard</title>
 </head>
 <body>
 
+  <div class="menu">
+    <ul>
+        <li>
+            <a href="/pages/clientes/home.html" class="logo" style="
+                padding-top: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;">
+                <img src="/src/img/android-chrome-192x192.png" alt="Logo" class="logo">
+            </a>
+        </li>
+
+        <li><a href="">Minhas reservas</a></li>
+        <li><a href="">Meus imóveis</a></li>
+        <li><a href="/pages/clientes/cadastro-imovel.html">Cadastrar imóvel</a></li>
+        <li class="right"><a href="/pages/clientes/login.html">Sair</a></li>
+        <li class="right"><a href="/pages/clientes/usuario.html">Usuário</a></li>
+        
+    </ul>
+</div>
+
+
   <div class="dashboard-container">
     <header>
       <h1>Painel do Usuário</h1>
-      <button class="logout-button" onclick="confirmLogout()">Logout</button>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-      </ul>
-    </nav>
+    
     <main>
       <div class="charts-container">
         <div class="chart">
@@ -38,28 +56,8 @@
           <p><strong>Cidade:</strong> São Paulo</p>
         </div>
       </section>
-
-      <section class="credentials-section">
-        <button id="showCredentialsButton" onclick="toggleCredentials()">Mostrar Login e Senha</button>
-        <div id="credentialsContainer" style="display:none;">
-          <p><strong>Login:</strong> usuario123</p>
-          <p><strong>Senha:</strong> ********</p>
-        </div>
-      </section>
     </main>
   </div>
 
-  <div class="modal" id="myModal">
-    <div class="modal-content">
-      <p>Tem certeza de que deseja sair?</p>
-      <button id="confirmButton">Sim</button>
-      <button id="closeModal">Não</button>
-      <div class="additional-info">
-        <p>Último login: 20/11/2023 18:30</p>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
