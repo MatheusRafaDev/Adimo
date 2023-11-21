@@ -91,4 +91,12 @@ body {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
+
+    cursor: pointer;
+}
+
+
+.btn-login:hover {
+    background-color: #9375CA;
+    color: #fff; 
 }
